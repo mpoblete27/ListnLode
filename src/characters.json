@@ -1,0 +1,64 @@
+[
+    {
+      "id": 1,
+      "name": "spiderManOriginal",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/f/f0/Peter_Parker_%28Earth-616%29_from_New_Avengers_Vol_2_2_Cover_0001.png/revision/latest?cb=20100604043233"
+      
+    },
+    {
+      "id": 2,
+      "name": "ultimateSpiderMan",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/87/Miles_Morales_%28Earth-1610%29_from_Ultimate_Comics_Spider-Man_Vol_2_1_Cover.png/revision/latest?cb=20110621220836"
+    },
+    {
+      "id": 3,
+      "name": "spidey2099",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/8b/Miguel_O%27Hara_%28Earth-928%29_from_Marvel_Annual_Flair_%28Trading_Cards%29_1994_Set_0001.gif/revision/latest/scale-to-width-down/180?cb=20161221124742"
+    },
+    {
+      "id": 4,
+      "name": "futureFoundation",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/5/50/Amazing_Spider-Man_Vol_1_658_Textless.jpg/revision/latest/scale-to-width-down/180?cb=20110406163121"
+    },
+    {
+      "id": 5,
+      "name": "stealthSuit",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/8a/Amazing_Spider-Man_Vol_1_650_Textless.jpg/revision/latest/scale-to-width-down/180?cb=20160828203814"
+    },
+    {
+      "id": 6,
+      "name": "ironSpider",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/0/01/Amazing_Spider-Man_Vol_1_529_Textless.jpg/revision/latest/scale-to-width-down/180?cb=20071101195503"
+    },
+    {
+      "id": 7,
+      "name": "spiderArmor",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/7/70/Spider-Armor_from_Web_of_Spider-Man_Vol_1_100_0001.gif/revision/latest/scale-to-width-down/150?cb=20090727232136"
+    },
+    {
+      "id": 8,
+      "name": "bagmanSuit",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/f/f6/Peter_Parker_%28Earth-616%29_from_Amazing_Spider-Man_Vol_1_258_0001.gif/revision/latest/scale-to-width-down/180?cb=20090727232012"
+    },
+    {
+      "id": 9,
+      "name": "electroProof",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/b/b0/Electro-Proof_Suit_001.jpeg/revision/latest/scale-to-width-down/180?cb=20130521015828"
+    },
+    {
+      "id": 10,
+      "name": "scarletSpider",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/d/d7/Ben_Reilly_Scarlet_Spider_Vol_1_3_Textless.jpg/revision/latest/scale-to-width-down/250?cb=20170321191425"
+    },
+    {
+      "id": 11,
+      "name": "superiorSuit",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/3/36/Superior_Spider-Man_Vol_1_1_Ramos_Variant_Textless.jpg/revision/latest/scale-to-width-down/180?cb=20121017214025"
+    },
+    {
+      "id": 12,
+      "name": "kaineStealth",
+      "image": "https://vignette.wikia.nocookie.net/marveldatabase/images/e/e9/Peter_Parker_%28Kaine%29_%28Earth-616%29_as_Scarlet_Spider.JPG/revision/latest/scale-to-width-down/180?cb=20120109175443"
+    }
+  ]
+  
