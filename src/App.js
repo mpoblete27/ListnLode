@@ -1,44 +1,32 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+// Universal Website Components  =================================
 import Navbar from "./Components/Navbar";
-import Jumbotron from "./Components/Jumbotron";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
+
+// Website Pages =================================================
+import Welcome from "./Components/Pages/Welcome/Welcome"
+import Profile from "./Components/Pages/Profile/Profile";
+import Chat from "./Components/Pages/Chat/Chat";
+import Forum from "./Components/Pages/Forum/Forum";
+import About from "./Components/Pages/About/About";
 
 class App extends Component {
   render () {
     return (
       <div>
-        <div className="welcomePage">
-          <Jumbotron />
-        </div> {/* End of Welcome Page*/}
-
-      {/* Planning to have a switch case to display different website pages */}
-        <div className="profilePage">
-          
-        </div> {/* End of Profile Page*/}
-        
-        <div className="chatPage">
-          {/* <Navbar />
-          <MDBContainer>
-            <MDBRow>
-              <MDBCol>Chat Directory</MDBCol>
-              <MDBCol><ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing /></MDBCol>
-              <MDBCol>Chat Playlist Queue</MDBCol>
-            </MDBRow>
-
-            <MDBRow>
-              <MDBCol></MDBCol>
-              <MDBCol>Live chat goes here!</MDBCol>
-              <MDBCol></MDBCol>
-            </MDBRow>
-          </MDBContainer> */}
-        </div> {/* End of Chat Page*/}
-
-        <div className="forumPage">
-        
-        </div> {/* End of Forum Page*/}
-
+        <Router>
+          <div>
+              <Navbar />
+              <Route exact path="/" component={Welcome} />
+              <Route exact path="/Profile" component={Profile} />
+              <Route exact path="/Chat" component={Chat} />
+              <Route exact path="/Forum" component={Forum} />
+              <Route exact path="/About" component={About} />
+          </div>
+        </Router>
       </div>
     )
   }
