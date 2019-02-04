@@ -1,9 +1,9 @@
 import React, { Component } from "react"; 
 import Chatkit from "@pusher/chatkit-client";
-import MessageList from "./MessageList";
-import SendMessageForm from "./SendMessageForm";
-import RoomList from "./RoomList";
-import NewRoomForm from "./NewRoomForm";
+import MessageList from "./MessageList/MessageList";
+import SendMessageForm from "./SendMessageForm/SendMessageForm";
+import RoomList from "./RoomList/RoomList";
+import NewRoomForm from "./NewRoomForm/NewRoomForm";
 import style from "./Chat.css";
 
 import { tokenUrl, instanceLocator } from "./config";
