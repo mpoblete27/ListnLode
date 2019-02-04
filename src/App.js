@@ -19,12 +19,12 @@ class App extends Component {
       <div>
         <Router>
           <div>
-              <Navbar />
-              <Route exact path="/" component={Welcome} />
-              <Route exact path="/Profile" component={Profile} />
-              <Route exact path="/Chat" component={Chat} />
-              <Route exact path="/Forum" component={Forum} />
-              <Route exact path="/About" component={About} />
+            <Navbar />
+            <Route exact path="/" component={Welcome} />
+            <Route exact path="/Profile" component={Profile} />
+            <Route exact path="/Chat" component={Chat} />
+            <Route exact path="/Forum" component={Forum} />
+            <Route exact path="/About" component={About} />
           </div>
         </Router>
       </div>

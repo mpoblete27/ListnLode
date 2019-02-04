@@ -3,7 +3,9 @@ import Jumbotron from "../../Jumbotron";
 
 const Chat = () => {
   return (
-    <Jumbotron />
+    <div>
+      <Jumbotron />
+    </div>
   )
 }
 

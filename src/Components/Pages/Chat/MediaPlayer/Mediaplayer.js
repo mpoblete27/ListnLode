@@ -5,4 +5,4 @@ function Mediaplayer(props) {
     <div className="mediaWrapper">{props.children}</div>
 }
 
-export default Mediaplayer
+export default Mediaplayer;
