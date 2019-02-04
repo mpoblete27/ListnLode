@@ -91,4 +91,3 @@ CREATE TABLE chats(
     number_of_users_in_chat INT default 0,
     PRIMARY KEY(chat_id)
 );
-
