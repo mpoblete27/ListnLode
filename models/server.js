@@ -1,5 +1,19 @@
 const express = require("express");
 const path = require("path");
+const Sequelize = require("sequelize");
+const sequelize = new Sequelize('test connection', 'root', "", {
+  host: 'localhost',
+  dialect: 'mysql'|'sqlite'|'postgres'|'mssql',
+  operatorsAliases: false,
+
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
+  });
+  
+const Passport = require("passport");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
