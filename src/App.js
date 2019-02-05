@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Universal Website Components  =================================
 import Navbar from "./Components/Navbar";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 // Website Pages =================================================
 import Welcome from "./Components/Pages/Welcome/Welcome"

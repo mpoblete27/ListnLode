@@ -4,7 +4,7 @@ import MessageList from "./MessageList/MessageList";
 import SendMessageForm from "./SendMessageForm/SendMessageForm";
 import RoomList from "./RoomList/RoomList";
 import NewRoomForm from "./NewRoomForm/NewRoomForm";
-import style from "./Chat.css";
+import "./Chat.css";
 
 import { tokenUrl, instanceLocator } from "./config";
 
