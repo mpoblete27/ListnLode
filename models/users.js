@@ -1,12 +1,17 @@
 var Users = sequelize.define('users', {
     user_id: {
-      type: Sequelize.STRING
+      type: Sequelize.STRING,
+      primaryKey: true,
+      autoIncrement: true,
     },
     username: {
-      type: Sequelize.STRING
+      type: Sequelize.STRING,
+      allowNull: false,
+      unique: true
     },
     password: {
-      type: Sequelize.STRING
+      type: Sequelize.STRING,
+      allowNull: false
     },
     pins_liked: {
       type: Sequelize.INTEGER

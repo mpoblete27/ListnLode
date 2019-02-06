@@ -8,6 +8,8 @@ import "./Chat.css";
 
 import { tokenUrl, instanceLocator } from "./config";
 
+// connect Sequelize.js to hit the const User
+
 class App extends Component {
     
   constructor() {
