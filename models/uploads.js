@@ -1,7 +1,9 @@
 // hi
 var Uploads = sequelize.define('uploads', {
     upload_id: {
-        type: sequelize.INTEGER
+        type: sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
     },
     track_name: {
         type: sequelize.STRING

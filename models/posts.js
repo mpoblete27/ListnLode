@@ -1,6 +1,8 @@
 var Posts = sequelize.define('posts', {
     post_id: {
-        type: sequelize.INTEGER
+        type: sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
     },
     topic_id: {
         type: sequelize.INTEGER
