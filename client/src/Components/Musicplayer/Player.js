@@ -10,32 +10,44 @@ import Timestamps from "./Timestamps";
 class Player extends React.Component{
 	state = {
 			playStatus: 'play',
-			currentTime: 0
+			currentTime: 0,
+			name: "the buzz",
+			artist: "hermitude",
+			album: "Grit Strength 15",
+			year: 2012,
+			artwork: "./testpic.jpeg",
+			duration: 223,
+			source: "./test.mp3"
 	};
-	getDefaultProps() {
-		return {
-			track: {
-				name: "the buzz",
-				artist: "hermitude",
-				album: "Summer's Gone",
-				year: 2012,
-				artwork: "./testpic.jpeg",
-				duration: 223,
-				source: "./test.mp3"
-			}
-		}
-  };
+	// getDefaultProps() {
+	// 	return {
+	// 		track: {
+	// 			name: "the buzz",
+	// 			artist: "hermitude",
+	// 			album: "Summer's Gone",
+	// 			year: 2012,
+	// 			artwork: "./testpic.jpeg",
+	// 			duration: 223,
+	// 			source: "./test.mp3"
+	// 		}
+// 		}
+//   };
   
 	render() {
 		return (
 			<div className="Player">
 				<div className="Header"><div className="Title">Now playing</div></div>
-				<TrackInformation track={this.props.track} />
+				<TrackInformation 
+					name={this.state.name} 
+					artist={this.state.artist}
+					album={this.state.album}
+					year={this.state.year}
+				/>
 				<Scrubber />
 				<Controls />
-				<Timestamps duration={this.props.track.duration} currentTime={this.state.currentTime} />
+				<Timestamps duration={this.state.duration} currentTime={this.state.currentTime} />
 				<audio>
-					<source src={this.props.track.source} />
+					<source src={this.state.source} />
 				</audio>
 			</div>
 		)

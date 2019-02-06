@@ -1,4 +1,5 @@
-var Forums = sequelize.define('forums', {
+module.exports = funtionct (sequelize, DataTypes) {
+    var Forums = sequelize.define('forums', {
     post_id: {
         type: sequelize.INTEGER
     },
@@ -14,4 +15,5 @@ var Forums = sequelize.define('forums', {
     users_in_topic: {
         type: sequelize.INTEGER
     }
-});
+})
+};

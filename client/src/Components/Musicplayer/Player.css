@@ -10,13 +10,14 @@ body {
 }
 
 .Player {
-	background: darkblue;
+	background: grey;
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 5px 10px -5px rgba(black, 1);
 	height: 667px;
 	position: relative;
 	width: 375px;
+	float: left;
 }
 	.Background {
 		width: 150%;
@@ -118,6 +119,7 @@ body {
 		margin: auto;
 		left: 0;
 		right: 0;
+		color: blue;
   }
 		.Button {
 			height: 75px;
