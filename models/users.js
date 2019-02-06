@@ -1,28 +1,45 @@
+module.exports = function(sequelize, DataTypes) {
 var Users = sequelize.define('users', {
     user_id: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       primaryKey: true,
       autoIncrement: true,
     },
     username: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
       unique: true
     },
     password: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     pins_liked: {
-      type: Sequelize.INTEGER
+      type: DataTypes.INTEGER
     },
     number_of_uploads: {
-      type: Sequelize.INTEGER
+      type: DataTypes.INTEGER
     },
     number_of_pins: {
-        type: Sequelize.INTEGER
+        type: DataTypes.INTEGER
       },
       number_of_posts: {
-        type: Sequelize.INTEGER
+        type: DataTypes.INTEGER
       }
     });
+
+  Users.associate = function(models) {
+    Users.hasMany(models.Pins, {
+      onDelete: 'cascade'
+    });
+    Users.hasMany(models.Upload, {
+      onDelete: 'cascade'
+    });
+    Users.hasMany(models.Posts, {
+      onDelete: 'cascade'
+    })
+
+  }
+
+  return Users;
+};

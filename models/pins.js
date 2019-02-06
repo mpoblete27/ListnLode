@@ -1,17 +1,35 @@
-// hi
+module.exports = function(sequelize, DataTypes) {
 var Pins = sequelize.define('pins', {
-    pin_id: {
-        type: sequelize.INTEGER,
+    id: {
+        type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
     track_name: {
-        type: sequelize.STRING
+        type: DataTypes.STRING
     },
     user_id: {
-        type: sequelize.INTEGER
+        type: DataTypes.INTEGER
     },
     pin_url: {
-        type: sequelize.STRING
+        type: DataTypes.STRING
     }
 });
+
+Pins.associate = function(models) {
+    Pins.belongsTo(models.Uploads, {
+        foreignKey: {
+            allowNull: false
+        }
+    });
+    Pins.belongsTo(models.Users, {
+        foreignKey: {
+            allowNull: false
+        }
+    });
+};
+
+// var pinArray = [];
+
+return Pins;
+};
