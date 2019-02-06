@@ -1,12 +1,13 @@
-module.exports = funtionct (sequelize, DataTypes) {
-    var Forums = sequelize.define('forums', {
-    post_id: {
-        type: sequelize.INTEGER
+var Forums = sequelize.define('forums', {
+    topic_id: {
+        type: sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
     },
     topic_name: {
         type: sequelize.STRING
     },
-    topic_id: {
+    post_id: {
         type: sequelize.INTEGER
     },
     user_id: {

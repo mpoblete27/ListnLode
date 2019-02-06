@@ -5,6 +5,7 @@ import Authentication from "./Authentication/Authentication";
 import Login from "./Login/Login";
 
 const Welcome = () => {
+  // implement user logic in backend doc when signup is complete
   return (
     <div>
       <Jumbotron />

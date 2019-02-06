@@ -1,17 +1,33 @@
+module.exports = function(sequelize, DataTypes) {
 var Posts = sequelize.define('posts', {
-    post_id: {
-        type: sequelize.INTEGER
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
     },
     topic_id: {
-        type: sequelize.INTEGER
+        type: DataTypes.INTEGER
     },
     user_id: {
-        type: sequelize.INTEGER
+        type: DataTypes.INTEGER
     },
     users_in_post: {
-        type: sequelize.INTEGER
+        type: DataTypes.INTEGER
     },
     post_message: {
-        type: sequelize.STRING
+        type: DataTypes.STRING
     }
 });
+
+Posts.associate = function(models) {
+    Posts.belongsTo(models.Users, {
+        foreignKey: {
+            allowNull: false
+        }
+    });
+};
+
+// var postArray = [];
+
+    return Posts
+};
