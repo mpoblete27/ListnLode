@@ -1,7 +1,9 @@
 import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBModalFooter, MDBIcon, MDBCardHeader, MDBBtn, MDBInput } from "mdbreact";
-  
+import { Link } from "react-router-dom";
+
   const Authentication = () => {
+  
     return (
       <MDBContainer id="signUpContainer">
       <MDBRow>
@@ -22,14 +24,14 @@ import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBModalFooter, MDB
                   </div>
   
                 <div className="text-center mt-4">
-                  <MDBBtn color="light-blue" className="mb-3" type="submit"> 
-                    Sign Up
+                  <MDBBtn color="light-blue" className="mb-3" type="submit"> <Link to={"/Profile"}>Sign Up</Link>
+    
                   </MDBBtn>
                 </div>
                 </form>
                 <MDBModalFooter>
                   <div className="font-weight-light">
-                    <p> Already a muse? <button id = "Login">Log In</button></p>
+                    <p> Already a muse? <button id = "Login"><Link to ={"/login"}>Log In</Link></button></p>
                   </div>
                 </MDBModalFooter>
               </MDBCardBody>
