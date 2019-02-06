@@ -1,15 +1,28 @@
 import React from "react";
 
 class Controls extends React.Component{
+
+	state = {
+		playStatus: "",
+		source: "./test.mp3"
+	}
+
+	componentDidMount(){
+		this.setState({
+			playStatus: this.props.playStatus
+		})
+	}
+
 	playPause() {
 		let status = this.state.playStatus;
-		let audio = document.getElementById('audio');
+		let audio = this.state.source;
 		if(status === 'play') {
-		  status = 'pause'; audio.play();
+		  this.setState.playStatus = 'pause'; 
+		  audio.pause();
 		} else {
-		  status = 'play'; audio.pause();
+		  this.setState.playStatus = 'play'; 
+		  audio.play();
 		}
-		this.setState({ playStatus: status });
 	  }
 	render() {
 		return (

@@ -11,32 +11,19 @@ class Player extends React.Component{
 	state = {
 			playStatus: 'play',
 			currentTime: 0,
-			name: "the buzz",
-			artist: "hermitude",
-			album: "Grit Strength 15",
-			year: 2012,
+			name: "The Buzz",
+			artist: "Hermitude",
+			album: "Dark Night Sweet Light",
+			year: 2015,
 			artwork: "./testpic.jpeg",
 			duration: 223,
 			source: "./test.mp3"
 	};
-	// getDefaultProps() {
-	// 	return {
-	// 		track: {
-	// 			name: "the buzz",
-	// 			artist: "hermitude",
-	// 			album: "Summer's Gone",
-	// 			year: 2012,
-	// 			artwork: "./testpic.jpeg",
-	// 			duration: 223,
-	// 			source: "./test.mp3"
-	// 		}
-// 		}
-//   };
-  
+
 	render() {
 		return (
 			<div className="Player">
-				<div className="Header"><div className="Title">Now playing</div></div>
+				<div className="Header"><div className="Title">Here's yo Music</div></div>
 				<TrackInformation 
 					name={this.state.name} 
 					artist={this.state.artist}
@@ -44,7 +31,9 @@ class Player extends React.Component{
 					year={this.state.year}
 				/>
 				<Scrubber />
-				<Controls />
+				<Controls 
+					playStatus={this.state.playStatus}	
+				/>
 				<Timestamps duration={this.state.duration} currentTime={this.state.currentTime} />
 				<audio>
 					<source src={this.state.source} />
