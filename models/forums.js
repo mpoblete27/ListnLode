@@ -16,4 +16,5 @@ var Forums = sequelize.define('forums', {
     users_in_topic: {
         type: sequelize.INTEGER
     }
-});
+})
+};
