@@ -1,9 +1,9 @@
 import React from "react";
-
+import Player from "./../../Musicplayer/Player"
 function Profile() {
   return(
     <div>
-      <h1>Profile!</h1>
+      <Player />
     </div>
   );
 }
