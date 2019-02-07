@@ -1,0 +1,1 @@
+// checkout jsx for https://mdbootstrap.com/docs/react/css/background-image/
