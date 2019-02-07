@@ -13,9 +13,10 @@ class Controls extends React.Component{
 		})
 	}
 
-	playPause() {
+	playPause = () => {
+		// console.log(this.state)
 		let status = this.state.playStatus;
-		let audio = this.state.source;
+		let audio = document.getElementById('audio');
 		if(status === 'play') {
 		  this.setState.playStatus = 'pause'; 
 		  audio.pause();
@@ -24,7 +25,9 @@ class Controls extends React.Component{
 		  audio.play();
 		}
 	  }
-	render() {
+	
+	
+		render() {
 		return (
 			<div className="Controls">
 				<button onClick={this.playPause} className="Button">
