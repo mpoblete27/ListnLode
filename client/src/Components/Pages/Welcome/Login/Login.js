@@ -1,10 +1,12 @@
 
-import React from 'react';
+import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBModalFooter, MDBIcon, MDBCardHeader, MDBBtn, MDBInput } from "mdbreact";
 import { Link } from "react-router-dom";
 
-  const LogIn = () => { 
-    return (
+  class Login extends Component { 
+    render () {
+      return (
+      <div>
       <MDBContainer id="signUpContainer">
       <MDBRow>
           <MDBCol md="6">
@@ -40,7 +42,9 @@ import { Link } from "react-router-dom";
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-    );
+      </div>
+      )
+      }
   };
   
-  export default LogIn;
+  export default Login;

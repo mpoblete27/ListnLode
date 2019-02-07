@@ -15,7 +15,7 @@ class MessageList extends Component {
       node.scrollTop = node.scrollHeight   
     }
   }
-    
+
   render() {
     if (!this.props.roomId) {
       return (

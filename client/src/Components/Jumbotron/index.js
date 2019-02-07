@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import "./index.css";
 
@@ -16,7 +17,9 @@ const Jumbotron = () => {
               within the larger container.
             </p>
             <p className="lead">
-              <MDBBtn color="primary">Learn More</MDBBtn>
+              <MDBBtn tag={Link} to="/Profile" color="primary">
+                Learn More
+              </MDBBtn>
             </p>
           </MDBJumbotron>
         </MDBCol>

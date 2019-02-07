@@ -16,7 +16,7 @@ class App extends Component {
     super()
     this.state = {
       roomId: null,
-      messages: [],
+      messages: ["WHERE ARE MY DAMN MESSAGES??!?!?!????","Hello?!?!","Oh hey, what's up class!","Where am I?....","I need caffeine :<"],
       joinableRooms: [],
       joinedRooms: []
     }

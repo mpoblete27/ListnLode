@@ -12,12 +12,11 @@ const Welcome = () => {
       <CarouselPage />
       <div class="container">
         <div class="row">
-          <div class="col-md-8"><Jumbotron /></div>
-          <div class="col-md-4">
-            <Authentication />
-            <Route path="/Login" component={Login} />
-            <Route path="*" component={Authentication} />
-          </div>
+        <Jumbotron />
+          {/* <div class="col-sm-8"><Jumbotron /></div>
+          <div class="col-lg-4">
+
+          </div> */}
         </div>
       </div>
     </div>
