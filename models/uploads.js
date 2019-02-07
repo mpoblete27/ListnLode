@@ -16,6 +16,7 @@ var Uploads = sequelize.define('uploads', {
     },
     upload_url: {
         type: DataTypes.STRING
+        // will be a url on the internet
     }
 });
 
