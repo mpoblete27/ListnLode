@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Universal Website Components  =================================
 import Navbar from "./Components/Navbar";
-import CarouselPage from "./Components/CarouselPage/CarouselPage"
 // Website Pages =================================================
 import Welcome from "./Components/Pages/Welcome/Welcome"
 import Profile from "./Components/Pages/Profile/Profile";
@@ -19,7 +18,6 @@ class App extends Component {
         <Router>
           <div>
             <Navbar/>
-            <CarouselPage/>
             <Route exact path="/" component={Welcome} />
             <Route exact path="/Profile" component={Profile} />
             <Route exact path="/Chat" component={Chat} />
