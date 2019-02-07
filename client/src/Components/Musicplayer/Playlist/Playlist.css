@@ -1,0 +1,15 @@
+h2 {
+    float: left;
+    position: relative;
+    padding: 3px;
+}
+
+.previous {
+    color: rgb(192, 67, 9);
+    font-weight: bold;
+}
+
+.next {
+    color: rgb(22, 221, 88);
+    font-weight: bold;
+}
