@@ -1,0 +1,10 @@
+html, body {
+    font-family: system-ui;
+}
+
+.names {
+    font-weight: bolder;
+    font-size: 26px;
+    color: blue;
+}
+
