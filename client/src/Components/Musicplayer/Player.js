@@ -23,7 +23,7 @@ class Player extends React.Component{
 	render() {
 		return (
 			<div className="Player">
-				<div className="Header"><div className="Title">Here's yo Music</div></div>
+				<div className="Header"><div className="Title">Currently Playing:</div></div>
 				<TrackInformation 
 					name={this.state.name} 
 					artist={this.state.artist}
@@ -35,7 +35,7 @@ class Player extends React.Component{
 					playStatus={this.state.playStatus}	
 				/>
 				<Timestamps duration={this.state.duration} currentTime={this.state.currentTime} />
-				<audio>
+				<audio id="audio">
 					<source src={this.state.source} />
 				</audio>
 			</div>

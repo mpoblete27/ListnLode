@@ -19,7 +19,7 @@ body {
 	position: relative;
 	float: left;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	width: 100%;
+	width: 1200px;
 	
 }
 	.Background {
@@ -54,6 +54,7 @@ body {
 		position: relative;
 	}
 	
+	
 	.TrackInformation {
 		width: 300px;
 		margin: 30px auto;
@@ -62,9 +63,10 @@ body {
 	  }
 	  
 	.Name {
+			font-size: 25;
 			font-size: 24px;
 			margin-bottom: 10px;
-			font-weight: 300;
+			font-weight: 700;
 	}
 
 	.Artist {
@@ -74,8 +76,9 @@ body {
 	}
 		
 	.Album {
-			font-size: 12px;
+			font-size: 20px;
 			opacity: .5;
+			font-weight: 700
 		}
 	
 	.Scrubber {
