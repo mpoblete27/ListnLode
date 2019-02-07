@@ -8,12 +8,11 @@ const Jumbotron = () => {
       <MDBRow>
         <MDBCol>
           <MDBJumbotron>
-            <h2 className="header">Muse</h2>
+            <h2 className="header">List and Load</h2>
             <p className="tagline">Your listening experience, redefined.</p>
             <hr className="my-2" />
             <p>
-              It uses utility classes for typgraphy and spacing to space content out
-              within the larger container.
+              Media player, social network, personal music storage. All in one. 
             </p>
             <p className="lead">
               <MDBBtn color="primary">Learn More</MDBBtn>
